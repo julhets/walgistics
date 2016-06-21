@@ -17,7 +17,7 @@
     5. Execute o comando: "vendor/bin/doctrine orm:schema-tool:create" na raiz da aplicação - Esse comando criará as entidades no banco de dados;
     5. Execute o start.sh (que também se encontra na raiz da aplicação). Ele iniciará o servidor de aplicação e deverá ser executado dentro da pasta raiz da aplicação;
     6. Teste a API acessando: http://localhost:8999
-    7. A API também está pública em: http://walgistics.rapidets.com.br/
+    7. Disponibilizei A API publicamente em: http://walgistics.rapidets.com.br/
 
 * Requerimentos (incluídos no install.sh)
     - PHP 5
