@@ -1,5 +1,5 @@
 {
-    "name": "julioreis/urlshorter",
+    "name": "julioreis/walgistics",
     "require": {
         "silex/silex": "v1.3.0",
         "doctrine/dbal": "v2.5.1",

@@ -80,6 +80,7 @@ class LogisticResource
 
       $bestRoute = $this->getBestRoute($from, $to, $routeMap);
 
+      //caso não exista rota disponível
       if(!$bestRoute) {
         throw new ValidationException('There is no routes available for this trip.');
       }
@@ -108,8 +109,10 @@ class LogisticResource
       $routesMatriz[$route->getFromLocal()][$route->getToLocal()] = $route->getDistance();
     }
 
+    //retorna todas as rotas possíveis para o $from -> $to através de uma função recursiva
     $bestRoute = $this->getAllRoutes($from, $to, $routesMatriz);
     asort($bestRoute);
+    //retorna apenas o primeiro elemento após a ordenação ascendente, ou seja, a rota de menor kilometragem
     return array_splice($bestRoute, 0, 1);
   }
 

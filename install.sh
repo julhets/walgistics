@@ -31,7 +31,7 @@ apt-get install curl php5-curl php5-gd php5-mcrypt php5-mysql php-apc -y > /dev/
 #MyUSER="root"
 #MyPASS="abc123"
 #HostName="127.0.0.1"
-#dbName="urlshorter"
+#dbName="walgistics"
 
 #mysql -u $MyUSER -p$MyPASS -Bse "CREATE DATABASE $dbName;"
 
@@ -42,14 +42,14 @@ apt-get install curl php5-curl php5-gd php5-mcrypt php5-mysql php-apc -y > /dev/
 #cd
 #mkdir appdesafio
 #cd appdesafio
-#git clone https://github.com/julhets/urlshorter.git
+#git clone https://github.com/julhets/walgistics.git
 
 #echo "Installing bundles with Composer"
-#cd ~/appdesafio/urlshorter
+#cd ~/appdesafio/walgistics
 #composer install
 
 #echo "Creating DB schema"
-#cd ~/appdesafio/urlshorter
+#cd ~/appdesafio/walgistics
 #vendor/bin/doctrine orm:schema-tool:create
 
 echo "Finished install."

@@ -45,7 +45,7 @@ class LogisticResourceProvider extends CommonResourceProvider implements
     $resources->post('/map', 'resources.logistic:persistRouteMap');
     $resources->post('/map/', 'resources.logistic:persistRouteMap');
 
-    //GET /map/route
+    //POST /map/route
     $resources->post('/map/route', 'resources.logistic:getRoute');
     return $resources;
   }
